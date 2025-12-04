@@ -3,7 +3,7 @@ WORKDIR /app/
 COPY go.mod go.sum /app/
 RUN go mod download
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -v
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -v
 
 FROM python:alpine
 RUN apk update && apk upgrade
