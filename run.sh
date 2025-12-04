@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. config.inc.sh
+. .env
 
 bin=./yt-dlp-telegram-bot
 if [ ! -x "$bin" ]; then
