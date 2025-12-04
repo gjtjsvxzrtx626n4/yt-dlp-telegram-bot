@@ -1,0 +1,7 @@
+services:
+  instagram-saver-bot:
+    container_name: instagram-saver-bot
+    image: skarppion101/yt-dlp-telegram-bot
+    restart: unless-stopped
+    env_file:
+      .env
